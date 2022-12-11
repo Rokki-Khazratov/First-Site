@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ec880f707b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+    </header>
+    <main>
+        <section class="imgg">
+        </section>
+        <div class="box-1 ">
+            <h1>NEW ACCOUNT</h1>
+            <section>
+                <div class="register">
+                    <form action="login" method="Post">
+                        {% csrf_token %}
+                        <label for=""><i class="fas fa-user"></i><input id="email" name="username" type="text" autocomplete="off"
+                                placeholder="Nickname" class="el-input__inner" required ></label>
+                        <label for=""><i class="fas fa-lock"></i><input id="password" name="password" type="password" autocomplete="off"
+                                placeholder="Password" class="el-input__inner" required ></label>
+                                <input type="submit" class="glow-on-hover" value="Sign in" type="button">
+                    </form>
+                </div>
+
+                <br>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+</body>
+
+</html>

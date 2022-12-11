@@ -1,0 +1,137 @@
+.imgg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/section.png);
+}
+.box-1{
+    background-color: white;
+    width: 735px;
+    height: 820px;
+    text-align: center;
+    margin: -53% 0 0 28%;
+    position: absolute;
+    filter:none;   
+    padding: 5%;
+    box-shadow: 150px black;
+}
+input{
+    width:400px;
+    size:10px;
+    height: 1px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10 rgba(0,0,0,0.1); 
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+}
+
+.register,label{
+    bottom: 20px;
+}
+input:ac{
+    background-color: transparent;
+}
+.el-input__inner{
+    outline: none;
+    margin-top: 10%;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    outline: none;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    outline: none;
+}
+
+.glow-on-hover:active {
+    color: #000;
+    outline:none;
+
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+    outline: none;
+  
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+    border-radius: 20px;
+    outline: none;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    outline: none;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
